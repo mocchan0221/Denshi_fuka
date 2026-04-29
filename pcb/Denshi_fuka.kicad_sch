@@ -2655,6 +2655,172 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:D_Zener"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Zener"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Zener diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "D_Zener_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Zener_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:Fuse"
 			(pin_numbers
 				(hide yes)
@@ -5182,6 +5348,16 @@
 		)
 		(uuid "106b5c51-eafc-4138-a719-c33a965a25f2")
 	)
+	(text "Interface Connector"
+		(exclude_from_sim no)
+		(at 264.668 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "149b33f3-4279-4608-979e-4c26873084dc")
+	)
 	(text "Electrically Isolated"
 		(exclude_from_sim no)
 		(at 101.346 79.502 0)
@@ -5191,6 +5367,46 @@
 			)
 		)
 		(uuid "20e4639a-40a3-45de-8035-0c1465dd3e8a")
+	)
+	(text "Analog Power Input"
+		(exclude_from_sim no)
+		(at 265.938 18.034 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "309c889d-ac4d-4416-bc6d-7945a90e64b1")
+	)
+	(text "Digital Isolator\n"
+		(exclude_from_sim no)
+		(at 123.698 23.114 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "459c064b-9c61-454e-be32-b9673628bf47")
+	)
+	(text "Thermistor Connector"
+		(exclude_from_sim no)
+		(at 264.922 72.136 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9eb91d5a-abae-409f-b19f-ea1d5020b5a8")
+	)
+	(text "Main Current Controll Circuit"
+		(exclude_from_sim no)
+		(at 172.212 78.994 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a22c5759-d099-4114-b20e-49fbac05c0f0")
 	)
 	(text "* Indicates a PWM-capable pin"
 		(exclude_from_sim no)
@@ -5203,17 +5419,73 @@
 		)
 		(uuid "c364973a-9a67-4667-8185-a3a5c6c6cbdf")
 	)
+	(text "3.3V Regurator"
+		(exclude_from_sim no)
+		(at 198.12 27.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c4e29189-faa5-4f01-ad4b-00b081f1712c")
+	)
+	(text "Reverse Voltage Bypass Diode"
+		(exclude_from_sim no)
+		(at 259.588 127.762 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e04bebde-066a-4ef8-9031-c1ed07127a7c")
+	)
+	(text "Connect to Arduino"
+		(exclude_from_sim no)
+		(at 47.752 18.288 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e12c6889-02df-42dd-a562-9be4379466fe")
+	)
+	(text "ADC"
+		(exclude_from_sim no)
+		(at 62.738 91.694 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ef03f348-cf32-467f-8e16-83bba8a81e78")
+	)
+	(text "DAC"
+		(exclude_from_sim no)
+		(at 44.196 148.844 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f4701b39-3178-47ac-bb3a-2d33ea369b5b")
+	)
 	(junction
-		(at 138.43 95.25)
+		(at 152.4 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0270c55c-2f99-4758-b73f-4ef7c06f5784")
+	)
+	(junction
+		(at 176.53 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "033129a3-8d4e-4bba-8a5d-fbe753abb7ff")
+	)
+	(junction
+		(at 135.89 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "10e435e6-3e35-4139-9b79-0ee244ade0d7")
-	)
-	(junction
-		(at 138.43 102.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "15942d97-ccac-4203-965b-cdac541f2a7b")
 	)
 	(junction
 		(at 179.07 40.64)
@@ -5234,10 +5506,22 @@
 		(uuid "1bb1d632-3b43-4d06-9b45-ccd8a8e817fa")
 	)
 	(junction
-		(at 138.43 135.89)
+		(at 135.89 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1c41b547-3cfd-4eba-a89c-dd6eebebc84b")
+	)
+	(junction
+		(at 135.89 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1f5723a2-6188-4685-b09f-25640cd052a0")
+	)
+	(junction
+		(at 176.53 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2fe30523-f481-4051-94c1-df7fb94c5af5")
 	)
 	(junction
 		(at 55.88 179.07)
@@ -5258,6 +5542,12 @@
 		(uuid "44f61a82-1a3b-41be-be89-88cd20647f2b")
 	)
 	(junction
+		(at 152.4 135.89)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4cc6ca66-3694-4afe-9fab-d6af12df1b89")
+	)
+	(junction
 		(at 48.26 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5276,19 +5566,13 @@
 		(uuid "7e4b5304-2f57-4cb8-b6fa-8dbea3a531a8")
 	)
 	(junction
-		(at 138.43 143.51)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "953b8a60-8b3c-4e61-9a39-c0c35bbbaf60")
-	)
-	(junction
 		(at 217.17 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "98cdcc60-d536-4934-9f01-c7b3c6fea09d")
 	)
 	(junction
-		(at 185.42 101.6)
+		(at 200.66 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9c839482-6c05-4b47-b324-d89f1d92693c")
@@ -5330,7 +5614,7 @@
 		(uuid "ccf0a14b-2d54-4f04-bc7a-bebb30a6ebcf")
 	)
 	(junction
-		(at 185.42 142.24)
+		(at 200.66 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d25aef6e-b6cb-408e-b4d1-9027f818d40a")
@@ -5342,13 +5626,19 @@
 		(uuid "da2b9841-aecc-4f4c-b631-f9447f91f4ac")
 	)
 	(junction
+		(at 135.89 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dae9abf7-20a7-43ef-a003-c71ebd61561b")
+	)
+	(junction
 		(at 55.88 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "db8697cb-b7a6-42ae-a98e-fcfb00672b4c")
 	)
 	(junction
-		(at 185.42 152.4)
+		(at 200.66 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dc60a40a-6c26-4196-867e-d0353da576a7")
@@ -5360,7 +5650,7 @@
 		(uuid "dc81ecac-d571-43cc-b1a0-32e3550ef71e")
 	)
 	(junction
-		(at 185.42 111.76)
+		(at 200.66 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dded3d14-2775-4254-ac11-ef9abf8255ca")
@@ -5372,7 +5662,7 @@
 		(uuid "f07bf19b-cc70-4aec-85f4-94961e6609cb")
 	)
 	(junction
-		(at 250.19 76.2)
+		(at 250.19 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fae94886-85ff-4e7a-8a9e-cfd67a94284d")
@@ -5395,13 +5685,23 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 137.16) (xy 238.76 137.16)
+			(xy 278.13 102.87) (xy 267.97 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "005a38ca-53db-45f6-98c7-d83d9ebecb78")
+	)
+	(wire
+		(pts
+			(xy 157.48 114.3) (xy 161.29 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "006e9514-2135-41a3-90ad-5d1bfd276297")
 	)
 	(wire
 		(pts
@@ -5475,7 +5775,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 102.87) (xy 161.29 102.87)
+			(xy 148.59 102.87) (xy 161.29 102.87)
 		)
 		(stroke
 			(width 0)
@@ -5492,6 +5792,16 @@
 			(type default)
 		)
 		(uuid "0d755514-3304-47b2-81f5-2f74b144f258")
+	)
+	(wire
+		(pts
+			(xy 148.59 95.25) (xy 152.4 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ee22f85-51b8-4fa2-8afb-6851241929a9")
 	)
 	(wire
 		(pts
@@ -5515,7 +5825,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 137.16) (xy 231.14 137.16)
+			(xy 257.81 102.87) (xy 260.35 102.87)
 		)
 		(stroke
 			(width 0)
@@ -5545,7 +5855,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 95.25) (xy 137.16 95.25)
+			(xy 135.89 95.25) (xy 134.62 95.25)
 		)
 		(stroke
 			(width 0)
@@ -5555,7 +5865,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 143.51) (xy 138.43 143.51)
+			(xy 119.38 143.51) (xy 135.89 143.51)
 		)
 		(stroke
 			(width 0)
@@ -5565,7 +5875,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 102.87) (xy 147.32 102.87)
+			(xy 135.89 102.87) (xy 140.97 102.87)
 		)
 		(stroke
 			(width 0)
@@ -5635,13 +5945,23 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 97.79) (xy 248.92 97.79)
+			(xy 250.19 24.13) (xy 251.46 24.13)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "1f319c86-8aa5-4989-b3e5-fa34b1b5e1c6")
+	)
+	(wire
+		(pts
+			(xy 152.4 95.25) (xy 153.67 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f6f7671-a0c8-4699-9a1f-1a4d8013a1cc")
 	)
 	(wire
 		(pts
@@ -5665,7 +5985,17 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 135.89) (xy 137.16 135.89)
+			(xy 157.48 111.76) (xy 157.48 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23b36f46-8583-4693-b02b-aae2c22608ec")
+	)
+	(wire
+		(pts
+			(xy 135.89 135.89) (xy 134.62 135.89)
 		)
 		(stroke
 			(width 0)
@@ -5675,7 +6005,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 100.33) (xy 248.92 100.33)
+			(xy 250.19 26.67) (xy 251.46 26.67)
 		)
 		(stroke
 			(width 0)
@@ -5705,7 +6035,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 102.87) (xy 185.42 101.6)
+			(xy 200.66 102.87) (xy 200.66 101.6)
 		)
 		(stroke
 			(width 0)
@@ -5805,6 +6135,36 @@
 	)
 	(wire
 		(pts
+			(xy 176.53 143.51) (xy 186.69 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b62a4e1-2170-4195-8dd4-a12fc8c46b48")
+	)
+	(wire
+		(pts
+			(xy 152.4 135.89) (xy 153.67 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3cf822d4-65e8-49c5-a814-70e6ec3c7d4a")
+	)
+	(wire
+		(pts
+			(xy 152.4 99.06) (xy 152.4 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e657bdd-56e9-4ff6-9758-d5b592cf3952")
+	)
+	(wire
+		(pts
 			(xy 198.12 50.8) (xy 198.12 48.26)
 		)
 		(stroke
@@ -5815,7 +6175,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 135.89) (xy 228.6 137.16)
+			(xy 257.81 101.6) (xy 257.81 102.87)
 		)
 		(stroke
 			(width 0)
@@ -5885,7 +6245,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 104.14) (xy 212.09 104.14)
+			(xy 218.44 104.14) (xy 227.33 104.14)
 		)
 		(stroke
 			(width 0)
@@ -5905,7 +6265,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 130.81) (xy 261.62 133.35)
+			(xy 255.27 137.16) (xy 255.27 139.7)
 		)
 		(stroke
 			(width 0)
@@ -5955,13 +6315,23 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 142.24) (xy 185.42 140.97)
+			(xy 200.66 142.24) (xy 200.66 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "4e87d9ac-49c3-4237-8440-5508603c4c38")
+	)
+	(wire
+		(pts
+			(xy 157.48 104.14) (xy 157.48 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ecc5e82-4331-4adf-93dc-bb51634c3422")
 	)
 	(wire
 		(pts
@@ -5995,7 +6365,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 111.76) (xy 185.42 111.76)
+			(xy 203.2 111.76) (xy 200.66 111.76)
 		)
 		(stroke
 			(width 0)
@@ -6005,7 +6375,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 101.6) (xy 247.65 100.33)
+			(xy 250.19 27.94) (xy 250.19 26.67)
 		)
 		(stroke
 			(width 0)
@@ -6015,7 +6385,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 147.32) (xy 231.14 147.32)
+			(xy 257.81 113.03) (xy 260.35 113.03)
 		)
 		(stroke
 			(width 0)
@@ -6035,7 +6405,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 135.89) (xy 151.13 135.89)
+			(xy 148.59 135.89) (xy 152.4 135.89)
 		)
 		(stroke
 			(width 0)
@@ -6045,7 +6415,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 106.68) (xy 187.96 111.76)
+			(xy 203.2 106.68) (xy 203.2 111.76)
 		)
 		(stroke
 			(width 0)
@@ -6065,6 +6435,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 139.7) (xy 152.4 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "588c7cd3-21f6-4b76-a0c8-63ee2be6d18f")
+	)
+	(wire
+		(pts
 			(xy 128.27 35.56) (xy 128.27 36.83)
 		)
 		(stroke
@@ -6075,7 +6455,17 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 77.47) (xy 250.19 76.2)
+			(xy 157.48 154.94) (xy 161.29 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a348ab8-bcc9-4b50-8bd8-537263c99ac0")
+	)
+	(wire
+		(pts
+			(xy 250.19 90.17) (xy 250.19 88.9)
 		)
 		(stroke
 			(width 0)
@@ -6105,7 +6495,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 95.25) (xy 138.43 95.25)
+			(xy 140.97 95.25) (xy 135.89 95.25)
 		)
 		(stroke
 			(width 0)
@@ -6115,7 +6505,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 133.35) (xy 121.92 133.35)
+			(xy 111.76 133.35) (xy 119.38 133.35)
 		)
 		(stroke
 			(width 0)
@@ -6175,7 +6565,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 25.4) (xy 241.3 25.4)
+			(xy 241.3 44.45) (xy 242.57 44.45)
 		)
 		(stroke
 			(width 0)
@@ -6265,7 +6655,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 152.4) (xy 185.42 151.13)
+			(xy 200.66 152.4) (xy 200.66 151.13)
 		)
 		(stroke
 			(width 0)
@@ -6302,6 +6692,16 @@
 			(type default)
 		)
 		(uuid "78f083cf-9e34-48b9-b357-06ae59437aed")
+	)
+	(wire
+		(pts
+			(xy 157.48 152.4) (xy 157.48 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "795a0220-f79a-43c8-9900-da7c5d1b2e7c")
 	)
 	(wire
 		(pts
@@ -6355,7 +6755,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 143.51) (xy 147.32 143.51)
+			(xy 135.89 143.51) (xy 140.97 143.51)
 		)
 		(stroke
 			(width 0)
@@ -6365,7 +6765,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 147.32) (xy 187.96 152.4)
+			(xy 203.2 147.32) (xy 203.2 152.4)
 		)
 		(stroke
 			(width 0)
@@ -6385,7 +6785,7 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 140.97) (xy 270.51 143.51)
+			(xy 264.16 147.32) (xy 264.16 149.86)
 		)
 		(stroke
 			(width 0)
@@ -6435,7 +6835,7 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 76.2) (xy 251.46 76.2)
+			(xy 250.19 88.9) (xy 251.46 88.9)
 		)
 		(stroke
 			(width 0)
@@ -6495,6 +6895,16 @@
 	)
 	(wire
 		(pts
+			(xy 157.48 144.78) (xy 157.48 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91aa91b9-4870-46e8-b306-e1c591a71147")
+	)
+	(wire
+		(pts
 			(xy 82.55 106.68) (xy 68.58 106.68)
 		)
 		(stroke
@@ -6525,7 +6935,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 153.67) (xy 185.42 152.4)
+			(xy 200.66 153.67) (xy 200.66 152.4)
 		)
 		(stroke
 			(width 0)
@@ -6555,7 +6965,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 24.13) (xy 240.03 25.4)
+			(xy 241.3 43.18) (xy 241.3 44.45)
 		)
 		(stroke
 			(width 0)
@@ -6565,7 +6975,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 144.78) (xy 212.09 144.78)
+			(xy 218.44 144.78) (xy 227.33 144.78)
 		)
 		(stroke
 			(width 0)
@@ -6585,7 +6995,7 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 66.04) (xy 250.19 66.04)
+			(xy 251.46 78.74) (xy 250.19 78.74)
 		)
 		(stroke
 			(width 0)
@@ -6635,13 +7045,33 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 130.81) (xy 270.51 133.35)
+			(xy 264.16 137.16) (xy 264.16 139.7)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a7ca34ce-a3ab-4356-b5a2-e94c29b8797d")
+	)
+	(wire
+		(pts
+			(xy 157.48 139.7) (xy 152.4 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7ed1971-5a65-4fdd-b88f-8c8beec5f207")
+	)
+	(wire
+		(pts
+			(xy 171.45 102.87) (xy 176.53 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9b0a0d3-0c93-40e6-bf92-87a0090afaf9")
 	)
 	(wire
 		(pts
@@ -6665,7 +7095,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 152.4) (xy 185.42 152.4)
+			(xy 203.2 152.4) (xy 200.66 152.4)
 		)
 		(stroke
 			(width 0)
@@ -6675,7 +7105,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 90.17) (xy 185.42 92.71)
+			(xy 200.66 90.17) (xy 200.66 92.71)
 		)
 		(stroke
 			(width 0)
@@ -6695,7 +7125,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 140.97) (xy 261.62 143.51)
+			(xy 255.27 147.32) (xy 255.27 149.86)
 		)
 		(stroke
 			(width 0)
@@ -6705,7 +7135,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 25.4) (xy 250.19 25.4)
+			(xy 250.19 44.45) (xy 251.46 44.45)
 		)
 		(stroke
 			(width 0)
@@ -6715,7 +7145,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 138.43) (xy 121.92 143.51)
+			(xy 119.38 138.43) (xy 119.38 143.51)
 		)
 		(stroke
 			(width 0)
@@ -6735,7 +7165,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 102.87) (xy 138.43 102.87)
+			(xy 119.38 102.87) (xy 135.89 102.87)
 		)
 		(stroke
 			(width 0)
@@ -6745,7 +7175,17 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 92.71) (xy 121.92 92.71)
+			(xy 157.48 99.06) (xy 152.4 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb7d02c3-55f7-4478-92df-ca3eb292c358")
+	)
+	(wire
+		(pts
+			(xy 111.76 92.71) (xy 119.38 92.71)
 		)
 		(stroke
 			(width 0)
@@ -6775,7 +7215,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 33.02) (xy 250.19 33.02)
+			(xy 250.19 52.07) (xy 251.46 52.07)
 		)
 		(stroke
 			(width 0)
@@ -6845,7 +7285,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 63.5) (xy 251.46 63.5)
+			(xy 238.76 76.2) (xy 251.46 76.2)
 		)
 		(stroke
 			(width 0)
@@ -6875,17 +7315,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 95.25) (xy 151.13 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cad40457-c9a1-4139-9410-c3d4acc9ba96")
-	)
-	(wire
-		(pts
-			(xy 121.92 97.79) (xy 121.92 102.87)
+			(xy 119.38 97.79) (xy 119.38 102.87)
 		)
 		(stroke
 			(width 0)
@@ -6895,7 +7325,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 38.1) (xy 241.3 38.1)
+			(xy 241.3 57.15) (xy 242.57 57.15)
 		)
 		(stroke
 			(width 0)
@@ -6915,7 +7345,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 111.76) (xy 185.42 110.49)
+			(xy 200.66 111.76) (xy 200.66 110.49)
 		)
 		(stroke
 			(width 0)
@@ -6945,7 +7375,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 38.1) (xy 250.19 38.1)
+			(xy 250.19 57.15) (xy 251.46 57.15)
 		)
 		(stroke
 			(width 0)
@@ -6965,7 +7395,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 38.1) (xy 240.03 36.83)
+			(xy 241.3 57.15) (xy 241.3 55.88)
 		)
 		(stroke
 			(width 0)
@@ -6975,7 +7405,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 101.6) (xy 187.96 101.6)
+			(xy 200.66 101.6) (xy 203.2 101.6)
 		)
 		(stroke
 			(width 0)
@@ -6995,7 +7425,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 143.51) (xy 161.29 143.51)
+			(xy 148.59 143.51) (xy 161.29 143.51)
 		)
 		(stroke
 			(width 0)
@@ -7005,7 +7435,17 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 146.05) (xy 228.6 147.32)
+			(xy 176.53 102.87) (xy 186.69 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5ef1b1e-4379-4dcd-bd03-6c65a27f3caa")
+	)
+	(wire
+		(pts
+			(xy 257.81 111.76) (xy 257.81 113.03)
 		)
 		(stroke
 			(width 0)
@@ -7015,7 +7455,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 102.87) (xy 172.72 102.87)
+			(xy 161.29 102.87) (xy 163.83 102.87)
 		)
 		(stroke
 			(width 0)
@@ -7025,7 +7465,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 45.72) (xy 248.92 43.18)
+			(xy 250.19 64.77) (xy 250.19 62.23)
 		)
 		(stroke
 			(width 0)
@@ -7045,7 +7485,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 101.6) (xy 185.42 100.33)
+			(xy 200.66 101.6) (xy 200.66 100.33)
 		)
 		(stroke
 			(width 0)
@@ -7065,7 +7505,7 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 66.04) (xy 250.19 76.2)
+			(xy 250.19 78.74) (xy 250.19 88.9)
 		)
 		(stroke
 			(width 0)
@@ -7075,7 +7515,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 142.24) (xy 187.96 142.24)
+			(xy 200.66 142.24) (xy 203.2 142.24)
 		)
 		(stroke
 			(width 0)
@@ -7085,7 +7525,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 96.52) (xy 247.65 97.79)
+			(xy 250.19 22.86) (xy 250.19 24.13)
 		)
 		(stroke
 			(width 0)
@@ -7105,7 +7545,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 43.18) (xy 250.19 43.18)
+			(xy 250.19 62.23) (xy 251.46 62.23)
 		)
 		(stroke
 			(width 0)
@@ -7115,7 +7555,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 143.51) (xy 185.42 142.24)
+			(xy 200.66 143.51) (xy 200.66 142.24)
 		)
 		(stroke
 			(width 0)
@@ -7125,7 +7565,17 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 113.03) (xy 185.42 111.76)
+			(xy 171.45 143.51) (xy 176.53 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e173904b-bb2d-446a-84c6-e9a5613568d7")
+	)
+	(wire
+		(pts
+			(xy 200.66 113.03) (xy 200.66 111.76)
 		)
 		(stroke
 			(width 0)
@@ -7135,7 +7585,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 147.32) (xy 238.76 147.32)
+			(xy 278.13 113.03) (xy 267.97 113.03)
 		)
 		(stroke
 			(width 0)
@@ -7155,7 +7605,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 143.51) (xy 171.45 143.51)
+			(xy 161.29 143.51) (xy 163.83 143.51)
 		)
 		(stroke
 			(width 0)
@@ -7195,7 +7645,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 135.89) (xy 138.43 135.89)
+			(xy 140.97 135.89) (xy 135.89 135.89)
 		)
 		(stroke
 			(width 0)
@@ -7285,7 +7735,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 73.66) (xy 251.46 73.66)
+			(xy 238.76 86.36) (xy 251.46 86.36)
 		)
 		(stroke
 			(width 0)
@@ -7315,7 +7765,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 133.35) (xy 185.42 130.81)
+			(xy 200.66 133.35) (xy 200.66 130.81)
 		)
 		(stroke
 			(width 0)
@@ -7732,7 +8182,7 @@
 		(uuid "35bc5b35-b7b2-44d5-bbed-557f428649b2")
 	)
 	(label "ADC_v2"
-		(at 212.09 144.78 180)
+		(at 227.33 144.78 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7752,7 +8202,7 @@
 		(uuid "379d2a4a-01fa-4da3-b555-8cc96fd9a8ff")
 	)
 	(label "ADC_i2+"
-		(at 171.45 143.51 180)
+		(at 186.69 143.51 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7792,7 +8242,7 @@
 		(uuid "3d13acd6-e254-407f-b6a4-89d9e00e899d")
 	)
 	(label "Vout1"
-		(at 114.3 92.71 0)
+		(at 111.76 92.71 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7832,7 +8282,7 @@
 		(uuid "420460d9-6f76-459b-8f0e-87bf21b9fb8e")
 	)
 	(label "Vout2"
-		(at 114.3 133.35 0)
+		(at 111.76 133.35 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7942,7 +8392,7 @@
 		(uuid "8a1e9107-f091-40c0-9be3-3359ebfc4b07")
 	)
 	(label "Thermo_2"
-		(at 248.92 147.32 180)
+		(at 278.13 113.03 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7982,7 +8432,7 @@
 		(uuid "9720180c-5a52-44fa-b247-fd3af6b4a0a6")
 	)
 	(label "Thermo_1"
-		(at 248.92 137.16 180)
+		(at 278.13 102.87 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8022,7 +8472,7 @@
 		(uuid "a3a3857f-af36-4912-9f61-35ef9bf810a0")
 	)
 	(label "Thermo_1"
-		(at 238.76 63.5 0)
+		(at 238.76 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8182,7 +8632,7 @@
 		(uuid "d63ffb3a-8a29-4676-a9d0-9fb3d041bf2e")
 	)
 	(label "Thermo_2"
-		(at 238.76 73.66 0)
+		(at 238.76 86.36 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8202,7 +8652,7 @@
 		(uuid "d9a65242-9c26-45cd-9a55-3e69f0d77784")
 	)
 	(label "ADC_v1"
-		(at 212.09 104.14 180)
+		(at 227.33 104.14 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8232,7 +8682,7 @@
 		(uuid "e7ce99b8-ca22-4c56-9e55-39d32c709f3c")
 	)
 	(label "ADC_i1+"
-		(at 172.72 102.87 180)
+		(at 186.69 102.87 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8272,7 +8722,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000056d71773")
-		(property "Reference" "J1"
+		(property "Reference" "J5"
 			(at 39.37 29.21 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8351,7 +8801,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "J1")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -8368,7 +8818,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000056d721e6")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR014"
 			(at 31.75 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -8426,7 +8876,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR04")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -8444,7 +8894,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000056d72368")
-		(property "Reference" "J2"
+		(property "Reference" "J3"
 			(at 57.15 24.13 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8529,7 +8979,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "J2")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -8546,7 +8996,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000056d72a3d")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR015"
 			(at 64.77 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -8604,7 +9054,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR05")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -8621,7 +9071,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000056d72f1c")
-		(property "Reference" "J3"
+		(property "Reference" "J8"
 			(at 39.37 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8695,7 +9145,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "J3")
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -8713,7 +9163,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000056d734d0")
-		(property "Reference" "J4"
+		(property "Reference" "J9"
 			(at 57.15 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8792,7 +9242,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "J4")
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -8810,7 +9260,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "01a5ca0d-5607-4e1d-a3a9-066533526feb")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR010"
 			(at 144.78 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -8870,7 +9320,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR017")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -8889,7 +9339,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "037dcaae-99fd-4632-aefe-666ab91ceac8")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR09"
 			(at 101.6 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -8949,7 +9399,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR016")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -8967,7 +9417,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "03d74c52-8aa2-4a54-8ce7-503c1656dbda")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR018"
 			(at 128.27 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -9027,7 +9477,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR014")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -9045,7 +9495,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "047a7484-894c-4b35-a84b-59c14d2d702c")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR039"
 			(at 55.88 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -9105,7 +9555,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR023")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -9113,7 +9563,7 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 270.51 137.16 270)
+		(at 264.16 143.51 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9123,8 +9573,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "058fde53-754d-4f4b-9f25-767ff2412737")
-		(property "Reference" "D2"
-			(at 273.05 135.8899 90)
+		(property "Reference" "D3"
+			(at 266.7 142.2399 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9135,7 +9585,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 273.05 138.4299 90)
+			(at 266.7 144.7799 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9146,7 +9596,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-220-2_Vertical"
-			(at 270.51 137.16 0)
+			(at 264.16 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9157,7 +9607,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 270.51 137.16 0)
+			(at 264.16 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9168,7 +9618,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 270.51 137.16 0)
+			(at 264.16 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9179,7 +9629,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 270.51 137.16 0)
+			(at 264.16 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9190,7 +9640,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 270.51 137.16 0)
+			(at 264.16 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9209,7 +9659,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "D2")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -9217,7 +9667,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 245.11 38.1 90)
+		(at 246.38 57.15 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9227,8 +9677,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "067e89fd-2d73-4cad-af2e-89f46578957b")
-		(property "Reference" "F4"
-			(at 245.11 31.75 90)
+		(property "Reference" "F2"
+			(at 246.38 50.8 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9238,7 +9688,7 @@
 			)
 		)
 		(property "Value" "Fuse"
-			(at 245.11 34.29 90)
+			(at 246.38 53.34 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9248,7 +9698,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 245.11 39.878 90)
+			(at 246.38 58.928 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9259,7 +9709,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 245.11 38.1 0)
+			(at 246.38 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9270,7 +9720,7 @@
 			)
 		)
 		(property "Description" "Fuse"
-			(at 245.11 38.1 0)
+			(at 246.38 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9289,7 +9739,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "F4")
+					(reference "F2")
 					(unit 1)
 				)
 			)
@@ -9297,7 +9747,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDA")
-		(at 185.42 153.67 0)
+		(at 200.66 153.67 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9307,8 +9757,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "086bbaff-56e7-4789-8760-8d32ff8baaec")
-		(property "Reference" "#PWR034"
-			(at 185.42 160.02 0)
+		(property "Reference" "#PWR040"
+			(at 200.66 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9319,7 +9769,7 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 185.42 158.75 0)
+			(at 200.66 158.75 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9329,7 +9779,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 185.42 153.67 0)
+			(at 200.66 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9340,7 +9790,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 153.67 0)
+			(at 200.66 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9351,7 +9801,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 185.42 153.67 0)
+			(at 200.66 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9367,7 +9817,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR034")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -9375,7 +9825,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 138.43 99.06 0)
+		(at 135.89 99.06 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9386,7 +9836,7 @@
 		(fields_autoplaced yes)
 		(uuid "0bfc240d-1290-4b74-a9e4-76bb6992f904")
 		(property "Reference" "Cf1"
-			(at 142.24 97.7899 0)
+			(at 139.7 97.7899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9397,7 +9847,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 142.24 100.3299 0)
+			(at 139.7 100.3299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9408,7 +9858,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
-			(at 139.3952 102.87 0)
+			(at 136.8552 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9419,7 +9869,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 138.43 99.06 0)
+			(at 135.89 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9430,7 +9880,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 138.43 99.06 0)
+			(at 135.89 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9468,7 +9918,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0c3dd597-a740-4378-b95e-d2e87dd328d1")
-		(property "Reference" "C3"
+		(property "Reference" "C8"
 			(at 86.36 165.0999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9532,7 +9982,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "C3")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -9540,7 +9990,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 261.62 143.51 0)
+		(at 255.27 149.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9550,8 +10000,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "12064e88-bf83-4ef1-b78e-92ff0ddeafcd")
-		(property "Reference" "#PWR021"
-			(at 261.62 149.86 0)
+		(property "Reference" "#PWR031"
+			(at 255.27 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9562,7 +10012,7 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 261.62 148.59 0)
+			(at 255.27 154.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9572,7 +10022,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 261.62 143.51 0)
+			(at 255.27 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9583,7 +10033,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 261.62 143.51 0)
+			(at 255.27 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9594,7 +10044,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 261.62 143.51 0)
+			(at 255.27 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9610,7 +10060,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR021")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -9618,7 +10068,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Socket")
-		(at 256.54 73.66 0)
+		(at 256.54 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9628,8 +10078,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "15ad6d02-e061-4eb1-9265-3ac446e0feb0")
-		(property "Reference" "J11"
-			(at 257.81 73.6599 0)
+		(property "Reference" "J10"
+			(at 257.81 86.3599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9640,7 +10090,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Socket"
-			(at 257.81 76.1999 0)
+			(at 257.81 88.8999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9651,7 +10101,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 256.54 73.66 0)
+			(at 256.54 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9662,7 +10112,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 256.54 73.66 0)
+			(at 256.54 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9673,7 +10123,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 256.54 73.66 0)
+			(at 256.54 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9692,7 +10142,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "J11")
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -9700,7 +10150,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 185.42 137.16 0)
+		(at 200.66 137.16 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -9711,8 +10161,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a190e19-138e-4f6e-ad9f-2fe13a6c09c7")
-		(property "Reference" "R3"
-			(at 182.88 135.8899 0)
+		(property "Reference" "R4"
+			(at 198.12 135.8899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9723,7 +10173,7 @@
 			)
 		)
 		(property "Value" "1.5MΩ"
-			(at 182.88 138.4299 0)
+			(at 198.12 138.4299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9734,7 +10184,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 187.198 137.16 90)
+			(at 202.438 137.16 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9745,7 +10195,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 137.16 0)
+			(at 200.66 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9756,7 +10206,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 185.42 137.16 0)
+			(at 200.66 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9775,16 +10225,15 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "R3")
+					(reference "R4")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
-		(at 261.62 137.16 90)
-		(mirror x)
+		(lib_id "power:GND")
+		(at 176.53 110.49 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9792,31 +10241,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "23c10faf-cec2-48c8-b995-26451e445cf8")
-		(property "Reference" "D1"
-			(at 259.08 135.8899 90)
+		(fields_autoplaced yes)
+		(uuid "1b479a2b-e8ef-4ae9-a5c4-44ce8d901e94")
+		(property "Reference" "#PWR025"
+			(at 176.53 116.84 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "D"
-			(at 259.08 138.4299 90)
+		(property "Value" "GNDA"
+			(at 176.53 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-2_Vertical"
-			(at 261.62 137.16 0)
+		(property "Footprint" ""
+			(at 176.53 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9827,7 +10276,167 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 261.62 137.16 0)
+			(at 176.53 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 176.53 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bc223024-1db8-4b99-9271-dedad7c20f44")
+		)
+		(instances
+			(project "Denshi_fuka"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 157.48 148.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "206cd2c1-7699-4bde-989c-a3f6dc689c8a")
+		(property "Reference" "Rpd2"
+			(at 154.94 147.3199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100kΩ"
+			(at 154.94 149.8599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 155.702 148.59 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 157.48 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2433372c-f711-4a19-8a90-9912b994301f")
+		)
+		(pin "2"
+			(uuid "4fa97ee4-15e0-45c8-a9cf-badea5e63c0a")
+		)
+		(instances
+			(project "Denshi_fuka"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "Rpd2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 255.27 143.51 90)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "23c10faf-cec2-48c8-b995-26451e445cf8")
+		(property "Reference" "D2"
+			(at 252.73 142.2399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "D"
+			(at 252.73 144.7799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-2_Vertical"
+			(at 255.27 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 255.27 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9838,7 +10447,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 261.62 137.16 0)
+			(at 255.27 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9849,7 +10458,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 261.62 137.16 0)
+			(at 255.27 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9860,7 +10469,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 261.62 137.16 0)
+			(at 255.27 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9879,7 +10488,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "D1")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -9897,7 +10506,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2560df95-5f73-42f7-9dca-879fb07b6735")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR034"
 			(at 80.01 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -9957,7 +10566,87 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR030")
+					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 167.64 102.87 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2b91ea04-c60b-4be4-a88e-a13e0d960935")
+		(property "Reference" "R2"
+			(at 167.64 96.52 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1kΩ"
+			(at 167.64 99.06 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.64 104.648 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 167.64 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a298d02f-a7c5-4e6f-9bcd-204b4aef7477")
+		)
+		(pin "1"
+			(uuid "72b7d6e3-9ac7-4c48-90ae-55589583e38c")
+		)
+		(instances
+			(project "Denshi_fuka"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -10047,7 +10736,7 @@
 	)
 	(symbol
 		(lib_id "power:VDC")
-		(at 185.42 90.17 0)
+		(at 200.66 90.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10057,8 +10746,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2c7ff722-d4fa-48f5-a26a-f44dfeb9d447")
-		(property "Reference" "#PWR031"
-			(at 185.42 93.98 0)
+		(property "Reference" "#PWR021"
+			(at 200.66 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10069,7 +10758,7 @@
 			)
 		)
 		(property "Value" "VDC1_Sense"
-			(at 185.42 85.09 0)
+			(at 200.66 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10079,7 +10768,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 185.42 90.17 0)
+			(at 200.66 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10090,7 +10779,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 90.17 0)
+			(at 200.66 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10101,7 +10790,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDC\""
-			(at 185.42 90.17 0)
+			(at 200.66 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10117,7 +10806,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR031")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -10125,7 +10814,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 247.65 96.52 0)
+		(at 250.19 22.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10135,8 +10824,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2f0a5df7-62ca-490c-a7f5-cc63f8e51148")
-		(property "Reference" "#PWR035"
-			(at 247.65 100.33 0)
+		(property "Reference" "#PWR023"
+			(at 250.19 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10147,7 +10836,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 247.65 91.44 0)
+			(at 250.19 17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10157,7 +10846,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 247.65 96.52 0)
+			(at 250.19 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10168,7 +10857,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 247.65 96.52 0)
+			(at 250.19 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10179,7 +10868,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 247.65 96.52 0)
+			(at 250.19 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10195,7 +10884,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR035")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -10203,7 +10892,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 185.42 96.52 0)
+		(at 200.66 96.52 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10214,7 +10903,7 @@
 		(fields_autoplaced yes)
 		(uuid "36bf59dd-4b3f-4738-a2fd-f05077196d98")
 		(property "Reference" "R1"
-			(at 182.88 95.2499 0)
+			(at 198.12 95.2499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10225,7 +10914,7 @@
 			)
 		)
 		(property "Value" "1MΩ"
-			(at 182.88 97.7899 0)
+			(at 198.12 97.7899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10236,7 +10925,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 183.642 96.52 90)
+			(at 198.882 96.52 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10247,7 +10936,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 96.52 0)
+			(at 200.66 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10258,7 +10947,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 185.42 96.52 0)
+			(at 200.66 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10363,7 +11052,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Socket")
-		(at 254 97.79 0)
+		(at 256.54 24.13 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10373,8 +11062,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "39f623d6-9359-420e-8ce9-8af82a2ba260")
-		(property "Reference" "J5"
-			(at 255.27 97.7899 0)
+		(property "Reference" "J11"
+			(at 257.81 24.1299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10385,7 +11074,7 @@
 			)
 		)
 		(property "Value" "SCREW TERMINAL"
-			(at 255.27 100.3299 0)
+			(at 257.81 26.6699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10396,7 +11085,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 254 97.79 0)
+			(at 256.54 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10407,7 +11096,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 254 97.79 0)
+			(at 256.54 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10418,7 +11107,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 254 97.79 0)
+			(at 256.54 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10437,7 +11126,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "J5")
+					(reference "J11")
 					(unit 1)
 				)
 			)
@@ -10445,7 +11134,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 185.42 106.68 0)
+		(at 200.66 106.68 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -10456,8 +11145,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c5482aa-9d96-4ee3-8ee3-1f772d4f9817")
-		(property "Reference" "R2"
-			(at 182.88 105.4099 0)
+		(property "Reference" "R3"
+			(at 198.12 105.4099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10468,7 +11157,7 @@
 			)
 		)
 		(property "Value" "240kΩ"
-			(at 182.88 107.9499 0)
+			(at 198.12 107.9499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10479,7 +11168,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 187.198 106.68 90)
+			(at 202.438 106.68 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10490,7 +11179,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 106.68 0)
+			(at 200.66 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10501,7 +11190,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 185.42 106.68 0)
+			(at 200.66 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10520,7 +11209,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "R2")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -10528,7 +11217,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 234.95 147.32 90)
+		(at 264.16 113.03 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10538,8 +11227,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "419e7e77-a290-4691-8419-2f940b39b2f6")
-		(property "Reference" "R5"
-			(at 234.95 140.97 90)
+		(property "Reference" "R8"
+			(at 264.16 106.68 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10549,7 +11238,7 @@
 			)
 		)
 		(property "Value" "10kΩ"
-			(at 234.95 143.51 90)
+			(at 264.16 109.22 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10559,7 +11248,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 234.95 149.098 90)
+			(at 264.16 114.808 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10570,7 +11259,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 234.95 147.32 0)
+			(at 264.16 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10581,7 +11270,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 234.95 147.32 0)
+			(at 264.16 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10600,7 +11289,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "R5")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -10608,7 +11297,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 151.13 102.87 90)
+		(at 144.78 102.87 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10618,7 +11307,7 @@
 		(dnp no)
 		(uuid "420b7d60-b6ef-49d2-98e9-8fa4d4b8de9e")
 		(property "Reference" "Rf1"
-			(at 151.13 109.22 90)
+			(at 144.78 109.22 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10628,7 +11317,7 @@
 			)
 		)
 		(property "Value" "1kΩ"
-			(at 151.13 106.68 90)
+			(at 144.78 106.68 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10638,7 +11327,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 151.13 104.648 90)
+			(at 144.78 104.648 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10649,7 +11338,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 151.13 102.87 0)
+			(at 144.78 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10660,7 +11349,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 151.13 102.87 0)
+			(at 144.78 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10687,7 +11376,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 228.6 135.89 0)
+		(at 257.81 101.6 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10697,8 +11386,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "460a4cc3-d65f-4851-8f18-1120a5126747")
-		(property "Reference" "#PWR041"
-			(at 228.6 139.7 0)
+		(property "Reference" "#PWR037"
+			(at 257.81 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10709,7 +11398,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 228.6 130.81 0)
+			(at 257.81 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10719,7 +11408,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 228.6 135.89 0)
+			(at 257.81 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10730,7 +11419,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 135.89 0)
+			(at 257.81 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10741,7 +11430,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 228.6 135.89 0)
+			(at 257.81 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10757,7 +11446,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR041")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -10775,7 +11464,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4629f478-ec1a-48c5-ae65-a8388d368cfb")
-		(property "Reference" "C7"
+		(property "Reference" "C3"
 			(at 185.42 44.4499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10839,7 +11528,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "C7")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -10847,7 +11536,7 @@
 	)
 	(symbol
 		(lib_id "power:VDC")
-		(at 240.03 24.13 0)
+		(at 241.3 43.18 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10857,8 +11546,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4830cd0b-7934-4396-b311-09276d6f1047")
-		(property "Reference" "#PWR037"
-			(at 240.03 27.94 0)
+		(property "Reference" "#PWR01"
+			(at 241.3 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10869,7 +11558,7 @@
 			)
 		)
 		(property "Value" "VDC1"
-			(at 240.03 19.05 0)
+			(at 241.3 38.1 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10879,7 +11568,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 240.03 24.13 0)
+			(at 241.3 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10890,7 +11579,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 240.03 24.13 0)
+			(at 241.3 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10901,7 +11590,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDC\""
-			(at 240.03 24.13 0)
+			(at 241.3 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10917,7 +11606,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR037")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -11018,7 +11707,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "56d7c166-3431-490c-a3ca-38e8265ecd43")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR04"
 			(at 144.78 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -11078,7 +11767,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR018")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -11096,7 +11785,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "57b831e0-80c4-4f0d-9cb1-44bde6c4b3af")
-		(property "Reference" "U4"
+		(property "Reference" "U3"
 			(at 218.44 48.2599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11178,7 +11867,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "U4")
+					(reference "U3")
 					(unit 3)
 				)
 			)
@@ -11196,7 +11885,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "581f0f02-bb17-4a54-bed1-a52a2858771d")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR036"
 			(at 55.88 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -11256,7 +11945,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR028")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -11273,7 +11962,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5b3eec16-35b7-4a91-8393-3ab9bacd9f25")
-		(property "Reference" "U5"
+		(property "Reference" "U4"
 			(at 134.874 31.496 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11379,7 +12068,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "U5")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -11387,7 +12076,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x01_Socket")
-		(at 255.27 25.4 0)
+		(at 256.54 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11397,8 +12086,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5b57ce63-70b7-426f-bcdf-30887a351c9b")
-		(property "Reference" "J6"
-			(at 256.54 24.1299 0)
+		(property "Reference" "J1"
+			(at 257.81 43.1799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11409,7 +12098,7 @@
 			)
 		)
 		(property "Value" "SCREW TERMINAL"
-			(at 256.54 26.6699 0)
+			(at 257.81 45.7199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11420,7 +12109,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 255.27 25.4 0)
+			(at 256.54 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11431,7 +12120,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 255.27 25.4 0)
+			(at 256.54 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11442,7 +12131,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 255.27 25.4 0)
+			(at 256.54 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11458,7 +12147,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "J6")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -11466,7 +12155,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Socket")
-		(at 256.54 63.5 0)
+		(at 256.54 76.2 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11476,8 +12165,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5e0ea06c-370f-4c43-8bb8-0daedad4965e")
-		(property "Reference" "J10"
-			(at 257.81 63.4999 0)
+		(property "Reference" "J7"
+			(at 257.81 76.1999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11488,7 +12177,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Socket"
-			(at 257.81 66.0399 0)
+			(at 257.81 78.7399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11499,7 +12188,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 256.54 63.5 0)
+			(at 256.54 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11510,7 +12199,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 256.54 63.5 0)
+			(at 256.54 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11521,7 +12210,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 256.54 63.5 0)
+			(at 256.54 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11540,7 +12229,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "J10")
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -11548,7 +12237,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 228.6 146.05 0)
+		(at 257.81 111.76 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11559,7 +12248,7 @@
 		(fields_autoplaced yes)
 		(uuid "6135ae13-07c8-4037-aecb-a6836bf6faac")
 		(property "Reference" "#PWR042"
-			(at 228.6 149.86 0)
+			(at 257.81 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11570,7 +12259,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 228.6 140.97 0)
+			(at 257.81 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11580,7 +12269,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 228.6 146.05 0)
+			(at 257.81 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11591,7 +12280,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 146.05 0)
+			(at 257.81 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11602,7 +12291,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 228.6 146.05 0)
+			(at 257.81 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11626,7 +12315,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:MCP6002-xP")
-		(at 195.58 144.78 0)
+		(at 210.82 144.78 0)
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11636,8 +12325,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "647a1f11-61b6-4f14-9a4b-146cfcc8a215")
-		(property "Reference" "U4"
-			(at 195.58 134.62 0)
+		(property "Reference" "U3"
+			(at 210.82 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11647,7 +12336,7 @@
 			)
 		)
 		(property "Value" "MCP6002-xP"
-			(at 195.58 137.16 0)
+			(at 210.82 137.16 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11657,7 +12346,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket_LongPads"
-			(at 195.58 144.78 0)
+			(at 210.82 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11668,7 +12357,7 @@
 			)
 		)
 		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
-			(at 195.58 144.78 0)
+			(at 210.82 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11679,7 +12368,7 @@
 			)
 		)
 		(property "Description" "1MHz, Low-Power Op Amp, DIP-8"
-			(at 195.58 144.78 0)
+			(at 210.82 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11716,7 +12405,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "U4")
+					(reference "U3")
 					(unit 2)
 				)
 			)
@@ -11734,7 +12423,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "654b4f11-3dee-4e7c-83e3-9b313f590532")
-		(property "Reference" "U7"
+		(property "Reference" "U1"
 			(at 198.12 34.29 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11800,7 +12489,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "U7")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -11818,7 +12507,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6696b086-b114-4c9b-ab1e-75e33a5e3331")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR011"
 			(at 179.07 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -11878,7 +12567,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR010")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -11886,7 +12575,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x01_Socket")
-		(at 255.27 33.02 0)
+		(at 256.54 52.07 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11896,8 +12585,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "66d10d53-8365-4bcf-97f2-dae2f26d2a1a")
-		(property "Reference" "J8"
-			(at 256.54 31.7499 0)
+		(property "Reference" "J2"
+			(at 257.81 50.7999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11908,7 +12597,7 @@
 			)
 		)
 		(property "Value" "SCREW TERMINAL"
-			(at 256.54 34.2899 0)
+			(at 257.81 53.3399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11919,7 +12608,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 255.27 33.02 0)
+			(at 256.54 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11930,7 +12619,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 255.27 33.02 0)
+			(at 256.54 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11941,7 +12630,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 255.27 33.02 0)
+			(at 256.54 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11957,7 +12646,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "J8")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -11965,7 +12654,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 138.43 139.7 0)
+		(at 135.89 139.7 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11976,7 +12665,7 @@
 		(fields_autoplaced yes)
 		(uuid "69ab8551-5010-44d8-a643-59c1d140a0af")
 		(property "Reference" "Cf2"
-			(at 142.24 138.4299 0)
+			(at 139.7 138.4299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11987,7 +12676,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 142.24 140.9699 0)
+			(at 139.7 140.9699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11998,7 +12687,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
-			(at 139.3952 143.51 0)
+			(at 136.8552 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12009,7 +12698,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 138.43 139.7 0)
+			(at 135.89 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12020,7 +12709,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 138.43 139.7 0)
+			(at 135.89 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12129,7 +12818,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 147.32 95.25 90)
+		(at 144.78 95.25 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12140,7 +12829,7 @@
 		(fields_autoplaced yes)
 		(uuid "6f527e16-ab44-4aa3-8c15-41899dff28be")
 		(property "Reference" "Rg1"
-			(at 147.32 88.9 90)
+			(at 144.78 88.9 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12150,7 +12839,7 @@
 			)
 		)
 		(property "Value" "1kΩ"
-			(at 147.32 91.44 90)
+			(at 144.78 91.44 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12160,7 +12849,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 147.32 97.028 90)
+			(at 144.78 97.028 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12171,7 +12860,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 95.25 0)
+			(at 144.78 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12182,7 +12871,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 147.32 95.25 0)
+			(at 144.78 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12209,7 +12898,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x01_Socket")
-		(at 255.27 38.1 0)
+		(at 256.54 57.15 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12219,8 +12908,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7531861b-d5ca-4d99-8600-95c802143482")
-		(property "Reference" "J7"
-			(at 256.54 36.8299 0)
+		(property "Reference" "J4"
+			(at 257.81 55.8799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12231,7 +12920,7 @@
 			)
 		)
 		(property "Value" "SCREW TERMINAL"
-			(at 256.54 39.3699 0)
+			(at 257.81 58.4199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12242,7 +12931,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 255.27 38.1 0)
+			(at 256.54 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12253,7 +12942,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 255.27 38.1 0)
+			(at 256.54 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12264,7 +12953,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 255.27 38.1 0)
+			(at 256.54 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12280,7 +12969,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "J7")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -12288,7 +12977,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 245.11 25.4 90)
+		(at 246.38 44.45 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12298,8 +12987,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "75ba7d0d-7c84-4b57-9394-d4e8b4d385e7")
-		(property "Reference" "F3"
-			(at 245.11 19.05 90)
+		(property "Reference" "F1"
+			(at 246.38 38.1 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12309,7 +12998,7 @@
 			)
 		)
 		(property "Value" "Fuse"
-			(at 245.11 21.59 90)
+			(at 246.38 40.64 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12319,7 +13008,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 245.11 27.178 90)
+			(at 246.38 46.228 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12330,7 +13019,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 245.11 25.4 0)
+			(at 246.38 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12341,7 +13030,7 @@
 			)
 		)
 		(property "Description" "Fuse"
-			(at 245.11 25.4 0)
+			(at 246.38 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12360,7 +13049,88 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "F3")
+					(reference "F1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 157.48 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "75e363c3-1266-4a39-90a0-9007449a491d")
+		(property "Reference" "Rpd1"
+			(at 154.94 106.6799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100kΩ"
+			(at 154.94 109.2199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 155.702 107.95 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 157.48 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f1f43c63-6559-431f-aee7-cc0ab17fa27e")
+		)
+		(pin "1"
+			(uuid "6157e8f5-cd11-42ee-9eaa-96ebf54c9eac")
+		)
+		(instances
+			(project "Denshi_fuka"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "Rpd1")
 					(unit 1)
 				)
 			)
@@ -12378,7 +13148,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "769d715c-52e5-4910-88a2-630e403e175b")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR030"
 			(at 80.01 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -12438,7 +13208,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR029")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -12446,7 +13216,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDA")
-		(at 247.65 101.6 0)
+		(at 250.19 27.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12456,8 +13226,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "772fe53c-53f2-4203-b4bc-46133c44bfb4")
-		(property "Reference" "#PWR040"
-			(at 247.65 107.95 0)
+		(property "Reference" "#PWR024"
+			(at 250.19 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12468,7 +13238,7 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 247.65 106.68 0)
+			(at 250.19 33.02 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12478,7 +13248,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 247.65 101.6 0)
+			(at 250.19 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12489,7 +13259,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 247.65 101.6 0)
+			(at 250.19 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12500,7 +13270,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 247.65 101.6 0)
+			(at 250.19 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12516,7 +13286,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR040")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -12524,7 +13294,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDA")
-		(at 248.92 45.72 0)
+		(at 250.19 64.77 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12534,8 +13304,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7864c697-8b99-4884-8062-992698305279")
-		(property "Reference" "#PWR03"
-			(at 248.92 52.07 0)
+		(property "Reference" "#PWR013"
+			(at 250.19 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12546,7 +13316,7 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 248.92 50.8 0)
+			(at 250.19 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12556,7 +13326,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 248.92 45.72 0)
+			(at 250.19 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12567,7 +13337,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 248.92 45.72 0)
+			(at 250.19 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12578,7 +13348,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 248.92 45.72 0)
+			(at 250.19 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12594,7 +13364,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR03")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -12612,7 +13382,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7cba7e4e-9adc-45b4-aed5-44929e0e8327")
-		(property "Reference" "C8"
+		(property "Reference" "C4"
 			(at 210.82 44.4499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12676,7 +13446,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "C8")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -12694,7 +13464,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7db747a6-a673-4e88-8edf-648c6734d64d")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR045"
 			(at 55.88 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -12754,7 +13524,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR024")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -12844,7 +13614,7 @@
 	)
 	(symbol
 		(lib_id "power:VDC")
-		(at 185.42 130.81 0)
+		(at 200.66 130.81 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12854,8 +13624,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8757162d-785c-43aa-9420-f3290b9bb540")
-		(property "Reference" "#PWR032"
-			(at 185.42 134.62 0)
+		(property "Reference" "#PWR035"
+			(at 200.66 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12866,7 +13636,7 @@
 			)
 		)
 		(property "Value" "VDC2"
-			(at 185.42 125.73 0)
+			(at 200.66 125.73 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12876,7 +13646,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 185.42 130.81 0)
+			(at 200.66 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12887,7 +13657,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 130.81 0)
+			(at 200.66 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12898,7 +13668,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDC\""
-			(at 185.42 130.81 0)
+			(at 200.66 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12914,7 +13684,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR032")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -12932,7 +13702,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "87989640-5e45-46c1-8c3c-0c88f20e36a5")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR017"
 			(at 118.11 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -12992,7 +13762,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR07")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -13010,7 +13780,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "87ece089-440e-4e2f-8ec6-4e2debba8a41")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR016"
 			(at 198.12 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -13070,7 +13840,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR036")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -13088,7 +13858,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "89983197-c482-4e00-b0e6-ecfafd21ee3a")
-		(property "Reference" "U1"
+		(property "Reference" "U2"
 			(at 177.8 48.2599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13170,8 +13940,86 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "U1")
+					(reference "U2")
 					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 176.53 151.13 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8f095096-8d49-414a-9801-cf58ca8573ce")
+		(property "Reference" "#PWR038"
+			(at 176.53 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDA"
+			(at 176.53 156.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 176.53 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 176.53 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 176.53 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bb0190bb-13ac-4bd4-aea5-6fb84ea027c0")
+		)
+		(instances
+			(project "Denshi_fuka"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "#PWR038")
+					(unit 1)
 				)
 			)
 		)
@@ -13188,7 +14036,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "90f793b8-505a-45d3-b771-cbc8b1706e2f")
-		(property "Reference" "U2"
+		(property "Reference" "U6"
 			(at 58.0233 152.4 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13270,7 +14118,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "U2")
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -13278,7 +14126,7 @@
 	)
 	(symbol
 		(lib_id "power:VDC")
-		(at 248.92 33.02 0)
+		(at 250.19 52.07 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13288,8 +14136,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "91a4fb1b-9eda-4940-8015-0b08121b8d12")
-		(property "Reference" "#PWR039"
-			(at 248.92 36.83 0)
+		(property "Reference" "#PWR05"
+			(at 250.19 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13300,7 +14148,7 @@
 			)
 		)
 		(property "Value" "VDC1_sense"
-			(at 248.92 27.94 0)
+			(at 250.19 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13310,7 +14158,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 248.92 33.02 0)
+			(at 250.19 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13321,7 +14169,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 248.92 33.02 0)
+			(at 250.19 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13332,7 +14180,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDC\""
-			(at 248.92 33.02 0)
+			(at 250.19 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13348,15 +14196,15 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR039")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GNDA")
-		(at 185.42 113.03 0)
+		(lib_id "Device:D_Zener")
+		(at 176.53 147.32 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13365,30 +14213,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "967d2b34-dbb8-4de0-9a33-be55bab2af96")
-		(property "Reference" "#PWR033"
-			(at 185.42 119.38 0)
-			(hide yes)
+		(uuid "92df071b-5e58-4933-89ac-62ac86156ba7")
+		(property "Reference" "D4"
+			(at 179.07 146.0499 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "GNDA"
-			(at 185.42 118.11 0)
+		(property "Value" "D_Zener"
+			(at 179.07 148.5899 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 185.42 113.03 0)
+			(at 176.53 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13399,7 +14248,88 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 113.03 0)
+			(at 176.53 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Zener diode"
+			(at 176.53 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c99abdfd-2f75-4fa4-aee5-41b666a4fb4b")
+		)
+		(pin "1"
+			(uuid "d0096bb9-fce1-4c52-854e-40e270b1dbc1")
+		)
+		(instances
+			(project "Denshi_fuka"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDA")
+		(at 200.66 113.03 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "967d2b34-dbb8-4de0-9a33-be55bab2af96")
+		(property "Reference" "#PWR026"
+			(at 200.66 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDA"
+			(at 200.66 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13410,7 +14340,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 185.42 113.03 0)
+			(at 200.66 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13426,7 +14356,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR033")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -13443,7 +14373,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a3f1e6c1-c0b4-4dd1-ab1b-db1fc17ca63e")
-		(property "Reference" "C4"
+		(property "Reference" "C7"
 			(at 30.48 126.9999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13507,7 +14437,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "C4")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -13525,7 +14455,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a7a27655-7e96-44ac-8276-73a0aa0f4ffc")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR044"
 			(at 82.55 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -13585,7 +14515,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR025")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -13603,7 +14533,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aa2fd7ea-608b-4dad-88fc-6eca1261a91c")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR06"
 			(at 118.11 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -13663,7 +14593,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR01")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -13681,7 +14611,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ad5f855d-2ba2-4751-899f-133634978b82")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR033"
 			(at 161.29 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -13741,7 +14671,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR012")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -13757,10 +14687,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "af76f371-dd5c-4c69-a666-7c5dd9a13c2b")
 		(property "Reference" "Q2"
-			(at 165.1 134.6199 0)
+			(at 162.814 130.048 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13771,7 +14700,7 @@
 			)
 		)
 		(property "Value" "2SK3176"
-			(at 165.1 137.1599 0)
+			(at 162.814 132.588 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13877,7 +14806,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "afe73d60-99ce-4518-8e69-85ca279a2313")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR043"
 			(at 82.55 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -13937,7 +14866,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR026")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -13945,7 +14874,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 185.42 147.32 0)
+		(at 200.66 147.32 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -13956,8 +14885,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b281493e-f779-445e-bd56-408b8c0b16dc")
-		(property "Reference" "R4"
-			(at 182.88 146.0499 0)
+		(property "Reference" "R6"
+			(at 198.12 146.0499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13968,7 +14897,7 @@
 			)
 		)
 		(property "Value" "24kΩ"
-			(at 182.88 148.5899 0)
+			(at 198.12 148.5899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13979,7 +14908,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 187.198 147.32 90)
+			(at 202.438 147.32 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13990,7 +14919,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 147.32 0)
+			(at 200.66 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14001,7 +14930,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 185.42 147.32 0)
+			(at 200.66 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14020,7 +14949,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "R4")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -14028,7 +14957,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDA")
-		(at 250.19 77.47 0)
+		(at 250.19 90.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14038,8 +14967,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b3782334-a730-48a9-b26f-5e2fcc3dfdbc")
-		(property "Reference" "#PWR043"
-			(at 250.19 83.82 0)
+		(property "Reference" "#PWR019"
+			(at 250.19 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14050,7 +14979,7 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 250.19 82.55 0)
+			(at 250.19 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14060,7 +14989,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 250.19 77.47 0)
+			(at 250.19 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14071,7 +15000,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 250.19 77.47 0)
+			(at 250.19 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14082,7 +15011,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 250.19 77.47 0)
+			(at 250.19 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14098,7 +15027,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR043")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -14106,7 +15035,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:LM358")
-		(at 129.54 95.25 0)
+		(at 127 95.25 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14116,8 +15045,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b645abec-2d84-4103-90fe-e7fe04b3b94f")
-		(property "Reference" "U1"
-			(at 129.54 85.09 0)
+		(property "Reference" "U2"
+			(at 127 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14127,7 +15056,7 @@
 			)
 		)
 		(property "Value" "LM358"
-			(at 129.54 87.63 0)
+			(at 127 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14137,7 +15066,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket"
-			(at 129.54 95.25 0)
+			(at 127 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14148,7 +15077,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
-			(at 129.54 95.25 0)
+			(at 127 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14159,7 +15088,7 @@
 			)
 		)
 		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
-			(at 129.54 95.25 0)
+			(at 127 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14196,7 +15125,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "U1")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -14204,7 +15133,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:LM358")
-		(at 129.54 135.89 0)
+		(at 127 135.89 0)
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14214,8 +15143,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b839a4fd-d440-4305-9d5a-ea768bda253c")
-		(property "Reference" "U1"
-			(at 129.54 125.73 0)
+		(property "Reference" "U2"
+			(at 127 125.73 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14225,7 +15154,7 @@
 			)
 		)
 		(property "Value" "LM358"
-			(at 129.54 128.27 0)
+			(at 127 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14235,7 +15164,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket"
-			(at 129.54 135.89 0)
+			(at 127 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14246,7 +15175,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
-			(at 129.54 135.89 0)
+			(at 127 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14257,7 +15186,7 @@
 			)
 		)
 		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
-			(at 129.54 135.89 0)
+			(at 127 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14294,7 +15223,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "U1")
+					(reference "U2")
 					(unit 2)
 				)
 			)
@@ -14302,7 +15231,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:MCP6002-xP")
-		(at 195.58 104.14 0)
+		(at 210.82 104.14 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14312,8 +15241,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ba2c2c1c-7781-4551-9606-f5c262098e83")
-		(property "Reference" "U4"
-			(at 195.58 93.98 0)
+		(property "Reference" "U3"
+			(at 210.82 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14323,7 +15252,7 @@
 			)
 		)
 		(property "Value" "MCP6002-xP"
-			(at 195.58 96.52 0)
+			(at 210.82 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14333,7 +15262,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket_LongPads"
-			(at 195.58 104.14 0)
+			(at 210.82 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14344,7 +15273,7 @@
 			)
 		)
 		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
-			(at 195.58 104.14 0)
+			(at 210.82 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14355,7 +15284,7 @@
 			)
 		)
 		(property "Description" "1MHz, Low-Power Op Amp, DIP-8"
-			(at 195.58 104.14 0)
+			(at 210.82 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14392,7 +15321,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "U4")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -14410,7 +15339,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c256abae-240d-4fce-bd1f-99438a9218a8")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR022"
 			(at 48.26 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -14470,7 +15399,87 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR027")
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 167.64 143.51 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c79ea4c7-b232-4e29-9e4b-198f9728e38d")
+		(property "Reference" "R5"
+			(at 167.64 137.16 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1kΩ"
+			(at 167.64 139.7 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.64 145.288 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 167.64 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cd17c0e2-1921-48b2-88e3-dd0392b984a7")
+		)
+		(pin "2"
+			(uuid "b7148a3a-e7c8-4b61-99e5-f7ae4d0e4003")
+		)
+		(instances
+			(project "Denshi_fuka"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -14489,7 +15498,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cac8b170-0530-41a8-9973-00b2ce8b1a4d")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR03"
 			(at 101.6 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -14549,7 +15558,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR015")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -14557,7 +15566,7 @@
 	)
 	(symbol
 		(lib_id "power:VDC")
-		(at 240.03 36.83 0)
+		(at 241.3 55.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14567,8 +15576,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ce07d97b-9b99-4aa2-a551-0555bbe7f39a")
-		(property "Reference" "#PWR038"
-			(at 240.03 40.64 0)
+		(property "Reference" "#PWR08"
+			(at 241.3 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14579,7 +15588,7 @@
 			)
 		)
 		(property "Value" "VDC2"
-			(at 240.03 31.75 0)
+			(at 241.3 50.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14589,7 +15598,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 240.03 36.83 0)
+			(at 241.3 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14600,7 +15609,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 240.03 36.83 0)
+			(at 241.3 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14611,7 +15620,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDC\""
-			(at 240.03 36.83 0)
+			(at 241.3 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14627,7 +15636,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR038")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -14718,7 +15727,7 @@
 	)
 	(symbol
 		(lib_id "power:VDC")
-		(at 270.51 130.81 0)
+		(at 264.16 137.16 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14728,8 +15737,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dacccce9-14f8-4ed7-a749-22b38aa7c7ac")
-		(property "Reference" "#PWR020"
-			(at 270.51 134.62 0)
+		(property "Reference" "#PWR029"
+			(at 264.16 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14740,7 +15749,7 @@
 			)
 		)
 		(property "Value" "VDC2"
-			(at 270.51 125.73 0)
+			(at 264.16 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14750,7 +15759,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 270.51 130.81 0)
+			(at 264.16 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14761,7 +15770,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 270.51 130.81 0)
+			(at 264.16 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14772,7 +15781,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDC\""
-			(at 270.51 130.81 0)
+			(at 264.16 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14788,7 +15797,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR020")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -14796,7 +15805,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 147.32 135.89 90)
+		(at 144.78 135.89 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14807,7 +15816,7 @@
 		(fields_autoplaced yes)
 		(uuid "e01303b4-ebea-4bf1-a9ee-77f46bf8efa3")
 		(property "Reference" "Rg2"
-			(at 147.32 129.54 90)
+			(at 144.78 129.54 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14817,7 +15826,7 @@
 			)
 		)
 		(property "Value" "1kΩ"
-			(at 147.32 132.08 90)
+			(at 144.78 132.08 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14827,7 +15836,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 147.32 137.668 90)
+			(at 144.78 137.668 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14838,7 +15847,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 135.89 0)
+			(at 144.78 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14849,7 +15858,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 147.32 135.89 0)
+			(at 144.78 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14886,7 +15895,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e082615b-fc26-4a0a-8557-62ba5cf0877f")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR012"
 			(at 217.17 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -14946,7 +15955,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR011")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -15036,7 +16045,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 151.13 143.51 90)
+		(at 144.78 143.51 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15046,7 +16055,7 @@
 		(dnp no)
 		(uuid "e5ac8e75-2b02-491a-9094-92c294ad8859")
 		(property "Reference" "Rf2"
-			(at 151.13 149.86 90)
+			(at 144.78 149.86 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15056,7 +16065,7 @@
 			)
 		)
 		(property "Value" "1kΩ"
-			(at 151.13 147.32 90)
+			(at 144.78 147.32 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15066,7 +16075,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 151.13 145.288 90)
+			(at 144.78 145.288 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15077,7 +16086,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 151.13 143.51 0)
+			(at 144.78 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15088,7 +16097,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 151.13 143.51 0)
+			(at 144.78 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15125,7 +16134,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e5b14baa-40f2-473b-a954-fc2b89f454b6")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR07"
 			(at 128.27 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -15185,7 +16194,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR06")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -15193,7 +16202,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x01_Socket")
-		(at 255.27 43.18 0)
+		(at 256.54 62.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15203,8 +16212,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e8a110f5-5aa3-4585-9aad-61aff420046e")
-		(property "Reference" "J9"
-			(at 256.54 41.9099 0)
+		(property "Reference" "J6"
+			(at 257.81 60.9599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15215,7 +16224,7 @@
 			)
 		)
 		(property "Value" "SCREW TERMINAL"
-			(at 256.54 44.4499 0)
+			(at 257.81 63.4999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15226,7 +16235,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 255.27 43.18 0)
+			(at 256.54 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15237,7 +16246,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 255.27 43.18 0)
+			(at 256.54 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15248,7 +16257,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 255.27 43.18 0)
+			(at 256.54 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15264,7 +16273,89 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "J9")
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Zener")
+		(at 176.53 106.68 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e9c1851d-7086-4003-9e57-fe86d3d73efd")
+		(property "Reference" "D1"
+			(at 179.07 105.4099 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "D_Zener"
+			(at 179.07 107.9499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 176.53 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 176.53 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Zener diode"
+			(at 176.53 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "cbc77f26-61f6-4875-9c96-7330350ccc3d")
+		)
+		(pin "1"
+			(uuid "c9b2f1db-b6c1-4223-b0dd-e51edff9b513")
+		)
+		(instances
+			(project "Denshi_fuka"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -15282,7 +16373,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ef711bbd-c420-4833-abfb-15a173908561")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR027"
 			(at 161.29 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -15342,7 +16433,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR08")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -15360,7 +16451,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f05ab411-7002-46d4-a888-bdc89d2a3dac")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR020"
 			(at 161.29 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -15420,7 +16511,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR09")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -15438,7 +16529,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f2a689f0-35d0-4dda-b4e1-afc714e8383b")
-		(property "Reference" "U3"
+		(property "Reference" "U5"
 			(at 52.9433 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15556,7 +16647,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "U3")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -15574,7 +16665,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f3f9c951-9621-4900-bc7a-6f50cb8dcac9")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR041"
 			(at 161.29 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -15634,7 +16725,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR013")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -15642,7 +16733,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 234.95 137.16 90)
+		(at 264.16 102.87 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15652,8 +16743,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f5b3d626-af9c-4536-9304-d83410f4441d")
-		(property "Reference" "R6"
-			(at 234.95 130.81 90)
+		(property "Reference" "R7"
+			(at 264.16 96.52 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15663,7 +16754,7 @@
 			)
 		)
 		(property "Value" "10kΩ"
-			(at 234.95 133.35 90)
+			(at 264.16 99.06 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15673,7 +16764,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 234.95 138.938 90)
+			(at 264.16 104.648 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15684,7 +16775,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 234.95 137.16 0)
+			(at 264.16 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15695,7 +16786,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 234.95 137.16 0)
+			(at 264.16 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15714,7 +16805,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "R6")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -15722,7 +16813,7 @@
 	)
 	(symbol
 		(lib_id "power:VDC")
-		(at 261.62 130.81 0)
+		(at 255.27 137.16 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15732,8 +16823,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fc416fc7-666e-4639-b067-935dc650d884")
-		(property "Reference" "#PWR019"
-			(at 261.62 134.62 0)
+		(property "Reference" "#PWR028"
+			(at 255.27 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15744,7 +16835,7 @@
 			)
 		)
 		(property "Value" "VDC1"
-			(at 261.62 125.73 0)
+			(at 255.27 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15754,7 +16845,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 261.62 130.81 0)
+			(at 255.27 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15765,7 +16856,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 261.62 130.81 0)
+			(at 255.27 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15776,7 +16867,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDC\""
-			(at 261.62 130.81 0)
+			(at 255.27 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15792,7 +16883,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR019")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -15808,10 +16899,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "fc5c3397-518b-4787-a3bd-bb5191869e3a")
 		(property "Reference" "Q1"
-			(at 165.1 93.9799 0)
+			(at 162.814 89.408 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15822,7 +16912,7 @@
 			)
 		)
 		(property "Value" "2SK3176"
-			(at 165.1 96.5199 0)
+			(at 162.814 91.948 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15918,7 +17008,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 270.51 143.51 0)
+		(at 264.16 149.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15928,8 +17018,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fc951f8a-22b3-4490-a78e-67c431816d3c")
-		(property "Reference" "#PWR022"
-			(at 270.51 149.86 0)
+		(property "Reference" "#PWR032"
+			(at 264.16 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15940,7 +17030,7 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 270.51 148.59 0)
+			(at 264.16 154.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15950,7 +17040,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 270.51 143.51 0)
+			(at 264.16 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15961,7 +17051,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 270.51 143.51 0)
+			(at 264.16 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15972,7 +17062,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 270.51 143.51 0)
+			(at 264.16 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15988,7 +17078,7 @@
 		(instances
 			(project "Denshi_fuka"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR022")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
