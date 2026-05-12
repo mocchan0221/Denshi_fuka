@@ -12,6 +12,7 @@
 #define FAST_CMD_START 0x68
 #define FAST_CMD_RESET 0x78
 
+
 void adc_write_reg(uint8_t reg, uint8_t value) {
     ADC_CS_LOW();
     spi_transfer(CMD_WRITE(reg));
@@ -29,25 +30,23 @@ uint8_t adc_read_reg(uint8_t reg) {
 
 void adc_init(void) {
     ADC_CS_HIGH();
-    _delay_ms(50); // 電源安定待ち
+    _delay_ms(50);
     
-    // 1. フルリセット（過去のゴースト設定を完全に消去！）
+    // レジスタ設定リセット
     ADC_CS_LOW();
     spi_transfer(FAST_CMD_RESET); 
     ADC_CS_HIGH();
     _delay_ms(10);
 
-    // 2. Arduinoコード準拠の最強設定
-    // 【重要】もし基板上に3.3Vなどの外部基準電圧(VREF) ICを載せていない場合、
-    // ここは 0x32 ではなく 0xB2 (内部基準電圧ON) にしてください！
+    // レジスタ設定
     adc_write_reg(0x01, 0xB2); // CONFIG0
-    adc_write_reg(0x02, 0x0E); // CONFIG1: OSR=1024
+    adc_write_reg(0x02, 0x0C); // CONFIG1: OSR=1024
     adc_write_reg(0x03, 0x8B); // CONFIG2: BOOST=1x, GAIN=1x
     adc_write_reg(0x04, 0xC0); // CONFIG3: Continuous mode
     adc_write_reg(0x05, 0x07); // IRQ
     adc_write_reg(0x06, 0x08); // MUX: CH0 - AGND
 
-    // 3. ADC変換開始
+    // ADC変換開始
     ADC_CS_LOW();
     spi_transfer(FAST_CMD_START); 
     ADC_CS_HIGH();
@@ -56,7 +55,7 @@ void adc_init(void) {
 
 int32_t adc_read_data(void) {
     ADC_CS_LOW();
-    spi_transfer(CMD_READ(0x00)); // ADCDATAレジスタ(0x00)を読む
+    spi_transfer(CMD_READ(0x00)); // ADCDATAレジスタ(0x00)
     uint8_t b2 = spi_transfer(0x00); 
     uint8_t b1 = spi_transfer(0x00); 
     uint8_t b0 = spi_transfer(0x00); 

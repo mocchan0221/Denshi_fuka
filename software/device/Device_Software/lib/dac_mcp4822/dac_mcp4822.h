@@ -1,13 +1,14 @@
 #ifndef DAC_H_
 #define DAC_H_
-
 #include <stdint.h>
 
 #define DAC_CH_A 0
 #define DAC_CH_B 1
 
+// 初期化
 void dac_init(void);
 
+// 書き込み処理
 void dac_write(uint8_t channel, uint16_t value);
 
 #endif /* DAC_H_ */

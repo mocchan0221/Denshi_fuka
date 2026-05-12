@@ -1,3 +1,4 @@
+#include <avr/io.h>
 #include "spi.h"
 
 void spi_init(void) {
@@ -8,6 +9,9 @@ void spi_init(void) {
 
     // SPIレジスタ設定
     SPCR = (1 << SPE) | (1 << MSTR);
+
+    // 【追加】SPI倍速モード有効化 (F_CPU / 2 = 8MHz)
+    SPSR |= (1 << SPI2X);
 }
 
 uint8_t spi_transfer(uint8_t data) {
