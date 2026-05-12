@@ -39,8 +39,8 @@ void adc_init(void) {
     _delay_ms(10);
 
     // レジスタ設定
-    adc_write_reg(0x01, 0xB2); // CONFIG0
-    adc_write_reg(0x02, 0x0C); // CONFIG1: OSR=1024
+    adc_write_reg(0x01, 0xE2); // CONFIG0
+    adc_write_reg(0x02, 0x0E); // CONFIG1: OSR=1024
     adc_write_reg(0x03, 0x8B); // CONFIG2: BOOST=1x, GAIN=1x
     adc_write_reg(0x04, 0xC0); // CONFIG3: Continuous mode
     adc_write_reg(0x05, 0x07); // IRQ

@@ -53,6 +53,7 @@ void send_packet_8b(uint8_t mode, uint8_t d1, uint8_t d2, uint8_t d3, uint8_t d4
 }
 
 int main(void) {
+    // テストLED用ピン設定
     DDRC |= (1 << PC1);
     PORTC &= ~(1 << PC1);
     
@@ -78,6 +79,8 @@ int main(void) {
 
     while (1) {
         uart_tx_task();
+
+        
         
         // ==========================================
         // ADCスキャンタスク (50µs毎)
@@ -101,7 +104,7 @@ int main(void) {
                         // 電流の回収
                         current_I = (adc_raw >> 8) & 0xFFFF;
                         // 次は電圧
-                        next_mux = (active_mode == MODE_CH1) ? 0x2C : 0x3C; // V1(CH2-AGND) or V2(CH3-AGND)
+                        next_mux = (active_mode == MODE_CH1) ? 0x28 : 0x38; // V1(CH2-AGND) or V2(CH3-AGND)
                     } 
                     else if (seq_idx % 2 == 1 && seq_idx < 6) {
                         // 電圧の回収
@@ -113,7 +116,7 @@ int main(void) {
                         // T1の回収
                         current_T1 = (adc_raw >> 16) & 0xFF;
                         // 次はT2
-                        next_mux = 0x6C; // T2(CH6-AGND)
+                        next_mux = 0x68; // T2(CH6-AGND)
                     }
                     else if (seq_idx == 7) {
                         // T2の回収
@@ -124,15 +127,15 @@ int main(void) {
 
                     // --- 動的OSRの制御 ---
                     if (seq_idx == 5) { // 次からサーミスタを読む時
-                        adc_write_reg(0x02, 0x0E); // OSRを1024に上げる
-                        adc_wait_ticks = 4; // 変換に200µs以上かかるので4回(200µs)スキップする
+                        adc_write_reg(0x02, 0x0C); // OSRを256に
+                        adc_wait_ticks = 4; // 4回(200µs)スキップする
                     } 
                     else if (seq_idx == 7) { // サーミスタが終わり、電流・電圧に戻る時
-                        adc_write_reg(0x02, 0x0C); // OSRを256に下げる (超高速化)
-                        adc_wait_ticks = 1; // 変換に約50µsかかるので1回スキップ
+                        adc_write_reg(0x02, 0x0E); // OSRを1024に
+                        adc_wait_ticks = 14; // 14回(700μs)スキップする
                     } 
                     else {
-                        adc_wait_ticks = 1; // 通常(OSR=256)の変換待ち
+                        adc_wait_ticks = 14; // 通常(OSR=700μs)の変換待ち
                     }
 
                     adc_write_reg(0x06, next_mux); // MUXの切り替え指示
@@ -165,6 +168,7 @@ int main(void) {
         // ==========================================
         while (uart_available()) {
             uint8_t data = uart_read();
+            
 
             if (rx_state == 0 && data == 0xAA) { rx_state = 1; cmd_buf[0] = data; }
             else if (rx_state == 1 && data == 0x55) { rx_state = 2; cmd_buf[1] = data; }
@@ -181,11 +185,15 @@ int main(void) {
                         // DAC A設定
                         if (cmd == 0x01 && sys_state == SYS_STATE_STREAM) {
                             target_dac1 = ((uint16_t)cmd_buf[3] << 8) | cmd_buf[4];
+                            active_mode = MODE_CH1;
+                            dac_write(DAC_CH_B, 0);
                             dac_write(DAC_CH_A, target_dac1);
                         }
                         // DAC B設定
                         else if (cmd == 0x02 && sys_state == SYS_STATE_STREAM) {
                             target_dac2 = ((uint16_t)cmd_buf[3] << 8) | cmd_buf[4];
+                            active_mode = MODE_CH2;
+                            dac_write(DAC_CH_A, 0);
                             dac_write(DAC_CH_B, target_dac2);
                         }
                         // ファン設定 (これはいつでも許可)
@@ -207,6 +215,13 @@ int main(void) {
                             // STANDBY -> STREAM への移行
                             else if (new_state == SYS_STATE_STREAM && sys_state == SYS_STATE_STANDBY) {
                                 sys_state = SYS_STATE_STREAM;
+                            }
+                            // STREAM -> STANDBY
+                            else if(new_state == SYS_STATE_STANDBY && sys_state == SYS_STATE_STREAM){
+                                sys_state = SYS_STATE_STANDBY;
+                                dac_write(DAC_CH_A, 0); 
+                                dac_write(DAC_CH_B, 0);
+                                target_dac1 = 0; target_dac2 = 0;
                             }
                             // 強制終了/安全停止 (リレーOFF、DAC目標値0)
                             else if (new_state == SYS_STATE_IDLE) {
