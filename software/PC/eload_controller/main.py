@@ -4,7 +4,7 @@ from core.serial_worker import SerialWorker
 from gui.main_window import MainWindow
 
 # 環境に合わせてポート名を変更してください
-TARGET_PORT = "COM8"
+TARGET_PORT = "COM3"
 
 def main():
     app = QApplication(sys.argv)

@@ -104,13 +104,18 @@ int main(void) {
                         // 電流の回収
                         current_I = (adc_raw >> 8) & 0xFFFF;
                         // 次は電圧
-                        next_mux = (active_mode == MODE_CH1) ? 0x28 : 0x38; // V1(CH2-AGND) or V2(CH3-AGND)
+                        next_mux = (active_mode == MODE_CH1) ? 0x48 : 0x58; // V1(CH4-AGND) or V2(CH5-AGND)
                     } 
                     else if (seq_idx % 2 == 1 && seq_idx < 6) {
                         // 電圧の回収
                         current_V = (adc_raw >> 8) & 0xFFFF;
-                        // 次は電流
-                        next_mux = (active_mode == MODE_CH1) ? 0x01 : 0x45; // I1(CH0-CH1) or I2(CH4-CH5)
+                        // 【修正】seq_idxが5の時だけは、次はサーミスタ(T1)を読むための設定をする！
+                        if (seq_idx == 5) {
+                            next_mux = 0x78; // T1(CH7-AGND)
+                        } else {
+                            // seq_idxが 1, 3 の時は電流に戻る
+                            next_mux = (active_mode == MODE_CH1) ? 0x23 : 0x01; // I1(CH2-CH3) or I2(CH0-CH1)
+                        }
                     }
                     else if (seq_idx == 6) {
                         // T1の回収
@@ -122,20 +127,20 @@ int main(void) {
                         // T2の回収
                         current_T2 = (adc_raw >> 16) & 0xFF;
                         // 次は電流に戻る
-                        next_mux = (active_mode == MODE_CH1) ? 0x01 : 0x45; 
+                        next_mux = (active_mode == MODE_CH1) ? 0x23 : 0x01;
                     }
 
                     // --- 動的OSRの制御 ---
                     if (seq_idx == 5) { // 次からサーミスタを読む時
                         adc_write_reg(0x02, 0x0C); // OSRを256に
-                        adc_wait_ticks = 4; // 4回(200µs)スキップする
+                        adc_wait_ticks = 5; // 4回(200µs)スキップする
                     } 
                     else if (seq_idx == 7) { // サーミスタが終わり、電流・電圧に戻る時
                         adc_write_reg(0x02, 0x0E); // OSRを1024に
-                        adc_wait_ticks = 14; // 14回(700μs)スキップする
+                        adc_wait_ticks = 15; // 14回(700μs)スキップする
                     } 
                     else {
-                        adc_wait_ticks = 14; // 通常(OSR=700μs)の変換待ち
+                        adc_wait_ticks = 15; // 通常(OSR=700μs)の変換待ち
                     }
 
                     adc_write_reg(0x06, next_mux); // MUXの切り替え指示
