@@ -69,7 +69,7 @@ int main(void) {
 
     // ラウンドロビンと待機用のステート
     uint8_t seq_idx = 0;
-    uint8_t adc_wait_ticks = 0; 
+    uint8_t adc_wait_ticks = 1; 
     uint16_t slow_tick = 0;
     uint16_t tx_tick = 0;
 
@@ -111,7 +111,7 @@ int main(void) {
                         current_V = (adc_raw >> 8) & 0xFFFF;
                         // 【修正】seq_idxが5の時だけは、次はサーミスタ(T1)を読むための設定をする！
                         if (seq_idx == 5) {
-                            next_mux = 0x78; // T1(CH7-AGND)
+                            next_mux = 0x68; // T1(CH7-AGND)
                         } else {
                             // seq_idxが 1, 3 の時は電流に戻る
                             next_mux = (active_mode == MODE_CH1) ? 0x23 : 0x01; // I1(CH2-CH3) or I2(CH0-CH1)
@@ -121,7 +121,7 @@ int main(void) {
                         // T1の回収
                         current_T1 = (adc_raw >> 16) & 0xFF;
                         // 次はT2
-                        next_mux = 0x68; // T2(CH6-AGND)
+                        next_mux = 0x78; // T2(CH6-AGND)
                     }
                     else if (seq_idx == 7) {
                         // T2の回収
