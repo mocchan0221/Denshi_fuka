@@ -3,8 +3,10 @@ from PyQt6.QtWidgets import (QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
                              QPushButton, QLabel, QDoubleSpinBox, QGroupBox, QGridLayout, QRadioButton, QTabWidget)
 from PyQt6.QtCore import pyqtSignal
 from core.protocol import Protocol
+from core.macro_engine import MacroEngine
 from .views.graph_view import GraphView
 from .views.numeric_view import NumericView
+from .views.macro_view import MacroView
 
 # --- ハードウェア定数 ---
 ADC_VREF = 2.4
@@ -29,6 +31,8 @@ class MainWindow(QMainWindow):
 
         self.active_circuit = 1
         self.ptr = 0
+
+        self.macro_engine = MacroEngine()
 
         self._init_ui()
 
@@ -100,20 +104,22 @@ class MainWindow(QMainWindow):
         # --- 4. ビューエリア (QTabWidgetを使って切り替え可能に) ---
         self.tab_widget = QTabWidget()
         
-        # 先ほど作ったViewをインスタンス化
+        # Viewをインスタンス化
         self.graph_view = GraphView()
         self.numeric_view = NumericView()
+        self.macro_view = MacroView()
         
         # タブに追加
         self.tab_widget.addTab(self.graph_view, "波形グラフ (Graph)")
         self.tab_widget.addTab(self.numeric_view, "テスター表示 (Meter)")
+        self.tab_widget.addTab(self.macro_view, "自動計測 (Macro)")
         
         # フォントサイズを少し大きくして押しやすく
         self.tab_widget.setStyleSheet("QTabBar::tab { height: 40px; width: 200px; font-size: 16px; font-weight: bold; }")
         
         main_layout.addWidget(self.tab_widget)
 
-    # --- 以下、既存の制御系ロジック ---
+
     def _update_spinbox_range(self):
         dac_max_v = DAC_VREF * DAC_GAIN
         if self.active_circuit == 1:
@@ -155,7 +161,6 @@ class MainWindow(QMainWindow):
         r_th = 10000.0 * (raw_8bit / (255.0 - raw_8bit))
         return f"{(1.0 / ((1.0 / 298.15) + (math.log(r_th / 10000.0) / 3435.0)) - 273.15):.1f}"
 
-    # --- 受信データのルーティング ---
     def on_data_received(self, data):
         mode = data.get('mode')
         
@@ -170,6 +175,8 @@ class MainWindow(QMainWindow):
             else:
                 real_v, real_i = adc_volts_v * C2_VDIV_RATIO, adc_volts_i / C2_SHUNT_R
             
+            self.macro_engine.update_latest_data(real_v, real_i)
+
             self.ptr += 1
 
             # 1. グラフには毎回データを送る (内部でバッファされる)
@@ -187,3 +194,32 @@ class MainWindow(QMainWindow):
 
     def on_connection_status(self, is_connected):
         self.lbl_status.setText(f"通信: {'接続中' if is_connected else '切断'}")
+
+    def _setup_macro_system(self):
+        """マクロエンジンとGUI・システムをシグナルで接続する"""
+        # 利用可能なマクロをスキャンしてViewに渡す
+        available_macros = self.macro_engine.scan_macros("macros")
+        self.macro_view.set_available_macros(available_macros)
+
+        # View -> Engine
+        self.macro_view.req_start.connect(self._start_macro_sequence)
+        self.macro_view.req_stop.connect(self.macro_engine.stop_macro)
+
+        # Engine -> View
+        self.macro_engine.log_msg.connect(self.macro_view.append_log)
+        self.macro_engine.finished_signal.connect(lambda: self.macro_view.set_running_state(False))
+        self.macro_engine.error_signal.connect(lambda msg: self.macro_view.append_log(f"<font color='red'>{msg}</font>"))
+
+        # Engine -> Device (API経由のコマンド実行)
+        self.macro_engine.req_set_state.connect(self._handle_state_change)
+        self.macro_engine.req_set_current.connect(self._set_current_from_macro)
+
+    def _start_macro_sequence(self, macro_class, params):
+        self.macro_view.text_log.clear()
+        self.macro_view.set_running_state(True)
+        self.macro_engine.start_macro(macro_class, params)
+
+    def _set_current_from_macro(self, target_a: float):
+        """マクロからの電流設定要求を受け取り、UIを更新してからコマンドを送信する"""
+        self.spin_current.setValue(target_a)
+        self._send_dac_val()
